@@ -1,0 +1,28 @@
+.heading{
+    font-size: 23px;
+    width: 100%;
+    margin: 0px;
+}
+.heading span{
+    font-size: 15px;
+    color: black;
+}
+
+.song_name{
+    animation-name:example;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    from{box-shadow: 1px 1px 38px turquoise;} 
+    to{box-shadow: 1px 1px 38px violet;} 
+  }
+  canvas{
+    border:5px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px grey;
+  }
+
+  body{
+    background-size: cover;
+  }
