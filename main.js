@@ -1,13 +1,13 @@
-song1="";
-song2="";
+song="";
+Song="";
 rightWristX="";
 rightWristY="";
 leftWristX="";
 leftWristY="";
 
 function preload() {
-    song1=loadSound("Kevin MacLeod - Fluffing a Duck.mp3");
-    song2=loadSound("alexander-nakarada-silly-intro.mp3");
+    song=loadSound("Kevin MacLeod - Fluffing a Duck.mp3");
+    Song=loadSound("alexander-nakarada-silly-intro.mp3");
 }
 
 function setup() {
@@ -24,11 +24,15 @@ function modelLoaded() {
 }
 
 function draw() {
-    image(video,0,0,600,500);
+    image(video,600,500,0,0);
 }
 
 function gotPoses(results) {
     if(results.length>0) {
+        leftWristX = pose.leftWrist.x;
+        leftWristY = pose.leftWrist.y;
+        rightWristX = pose.rightWrist.x;
+        rightWristY = pose.rightWrist.y;
         console.log(results);
     }
 }
